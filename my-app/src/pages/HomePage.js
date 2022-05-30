@@ -1,12 +1,13 @@
-import {Redirect} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import {useNavigate} from 'react-router-dom'
 
 const HomePage = () => {
-  let navigate = useNavigate( );
   return(
     <div>
-Home page
+      <h1>Home page</h1>
+      <Link to= '/login'>Войдите в систему</Link>
     </div>
+    
   )
 }
 

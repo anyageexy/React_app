@@ -1,10 +1,14 @@
-import {Redirect} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const RegisterPage = () => {
   return(
+    //форма типа для авторизации
     <div>
-Register Page
+      <h1>Страница регистрации</h1>
+      
+      <Link to='/login'>Войдите в аккаунт</Link>
     </div>
+    
   )
 }
 
