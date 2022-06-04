@@ -7,17 +7,20 @@ const Login = () => {
   
   const dispatch = useDispatch()
 
-  const hadleLogin = (email, password) => {
+  const handleLogin = (email, password) => {
     const auth = getAuth();
-    signInWithEmailAndPassword(auth,email, password);
+    signInWithEmailAndPassword(auth,email, password)
+    .then(console.log)
+    .catch(console.error);
     
   } //Это будет функция при вызове которой я ожидаю
   //что у четные данные из формы отправятся на сервер и я получу нужного пльзователя
 
   return(
-    <div>
-
-    </div>
+    <Form 
+      title = "sign in"
+      handleClick={handleLogin}
+    />
   )
 }
 
