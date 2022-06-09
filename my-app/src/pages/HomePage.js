@@ -8,9 +8,12 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const {isAuth, email} = useAuth();
   return isAuth ? (
-    <div>
-      <h1>Добро пожаловать</h1>
-      <button onClick = {() => dispatch(removeUser())}>Выйти из аккаунта {email}</button>
+    <div className="home_page_main_container">
+      <div className="home_page_head_container">
+        <h1>Добро пожаловать</h1>
+        <button className="btn_grey" onClick = {() => dispatch(removeUser())}>Выйти из аккаунта {email}</button>
+      </div>
+
     </div>
   ) : 
   (

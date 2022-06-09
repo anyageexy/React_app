@@ -9,7 +9,7 @@ const LoginPage = () => {
     <div className="login_page_form_container">
       <h1 className = 'login_page_head'>Страница авторизации</h1>
       <Login></Login>
-      <Link to='/register'>Зарегистрируйтесь</Link>
+      <div className="login_page_register_link_container">Или <Link to='/register'>зарегистрируйтесь</Link></div> 
     </div>
     
   )

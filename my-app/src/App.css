@@ -47,6 +47,18 @@
 /* MY STYLES */
 
 /* HOME PAGE */
+.home_page_main_container{
+  padding: 50px;
+}
+.home_page_head_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:rgb(127, 129, 255);
+}
+.btn_grey{
+  background-color: #f2f1f1;
+}
 .home_page_link_container{
   width: 100%;
   /* text-align: center; */
@@ -64,8 +76,8 @@
   color:rgb(127, 129, 255);
 }
 
-/* LOGIN PAGE */
-.login_page_form_container{
+/* LOGIN AND REGISTER PAGE */
+.login_page_form_container, .register_page_form_container{
   width: 100%;
   /* text-align: center; */
   height: 100vh;
@@ -74,8 +86,43 @@
   justify-content: center;
   align-items: center;
 }
-.login_page_head{
-  font-size: 30px;
+.login_page_head, .register_page_head{
+  font-size: 40px;
   font-weight: 600;
   color:rgb(127, 129, 255);
+}
+
+.login_page_register_link_container, .register_page_login_link_container{
+  padding-top: 30px;
+  font-size: 20px;
+  color:rgb(77, 77, 77);
+}
+
+.login_page_register_link_container a{
+  font-size: 20px;
+  color:rgb(77, 77, 77);
+}
+
+/* для всех полей ввода */
+input{
+  margin: 10px;
+  background-color: #f2f1f1;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* для всех кнопок */
+button{
+  background-color: rgb(127, 129, 255);;
+  height: 50px;
+  /* outline: none; */
+  border: none;
+  padding: 0px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  /* width: 100px; */
 }
