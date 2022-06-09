@@ -43,3 +43,39 @@
   color: #ffffff;
   text-align: center;
 }
+
+/* MY STYLES */
+
+/* HOME PAGE */
+.home_page_link_container{
+  width: 100%;
+  /* text-align: center; */
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home_page_link{
+  /* text-decoration: none; */
+  min-width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color:rgb(127, 129, 255);
+}
+
+/* LOGIN PAGE */
+.login_page_form_container{
+  width: 100%;
+  /* text-align: center; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_page_head{
+  font-size: 30px;
+  font-weight: 600;
+  color:rgb(127, 129, 255);
+}

@@ -14,7 +14,10 @@ const HomePage = () => {
     </div>
   ) : 
   (
-      <Link to= '/login'>Войдите в систему</Link>
+    <div className='home_page_link_container'>
+      <Link to= '/login' className='home_page_link'>Войдите в систему</Link>
+    </div>
+      
   )
 }
 
